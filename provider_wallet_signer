@@ -1,0 +1,29 @@
+//const provider = await new ethers.providers.Web3Provider(window.ethereum);
+        
+
+const provider = new ethers.providers.JsonRpcProvider(INFURA_TESTNET_URL);
+
+provider.getBalance(WALLET_ADDRESS);
+provider.getCode(CONTRACT_ADDRESS);
+provider.getTransaction(TRANSACTION_HASH);
+
+//provider.send("eth_requestAccounts", []);
+//const signer = provider.getSigner();
+
+const wallet = new ethers.Wallet(WALLET_SECRET);
+const signer = wallet.connect(provider);
+
+UniswapRouterContract.connect(signer).exactInputSingle(params);
+
+WethContract.connect(signer).approve(routerAddress, approvalAmount);
+
+const transaction = {
+    data: route.methodParameters.calldata,
+    to: V3_SWAP_ROUTER_ADDRESS,
+    value: BigNumber.from(route.methodParameters.value),
+    from: WALLET_ADDRESS,
+    gasPrice: BigNumber.from(route.gasPrice),
+    gaslimit: ethers.utils.hexlify(1000000)
+}
+
+signer.sendTransaction(transaction);
