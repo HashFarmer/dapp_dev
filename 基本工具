@@ -1,6 +1,10 @@
 1:
 solcjs 
 
+npm install -g solc
+//nodejs开发的命令行程序
+
+
 2:
 react
 
