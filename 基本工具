@@ -8,6 +8,11 @@ npm install -g solc
 2:
 react
 
+npx create-next-app app_name //自动下载 react，react-dom，next等一堆东西
+
+
+
+
 3:
 hardhat
 
