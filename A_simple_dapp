@@ -27,3 +27,5 @@ npm install bootstrap // 这个是做样式的？
 第三部分：前端关联后端
 
 用到了ethers.js ，用js代码（在网页中或者node.js程序中）与后端即区块链上的contract交互
+
+前端的那些元素的操作（onchange, onsubmmit）触发js函数，而这项js函数正是运用了ethers.js与后端交互
