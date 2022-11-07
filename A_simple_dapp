@@ -1,0 +1,11 @@
+youtube: blockchain development tutorial for developers: let's create a simple dapp
+
+笔记：
+hardhat 官网 ，npm install --save-dev hardhat
+
+hardhat是负责"后端"开发的，但是是依赖node.js进行的，在 项目中位于 /contract 目录下，是一个node.js项目，npm init -y
+npx hardhat -> 'create a basic simple project'
+npx hardhat compile -> 得到 abi 和 bytecode，bytecode是真正上链的
+npx hardhat test
+npx hardhat node -> 启动测试节点，实际上是开启了本地服务器，一个HTTP和WebSocket JSON-RPC的服务器，在 http://127.0.0.1:8545/
+npx hardhat run xxx.js  --network localhost 部署合约
