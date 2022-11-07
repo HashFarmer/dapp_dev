@@ -22,3 +22,8 @@ npx create-react-app client
 npm install bootstrap // 这个是做样式的？
 
 前端设计，表单，按钮 ，等，此时与后端还是分离的
+
+
+第三部分：前端关联后端
+
+用到了ethers.js ，用js代码（在网页中或者node.js程序中）与后端即区块链上的contract交互
