@@ -1,3 +1,4 @@
+
 youtube: blockchain development tutorial for developers: let's create a simple dapp
 
 笔记：
@@ -16,4 +17,8 @@ npx hardhat run xxx.js  --network localhost 部署合约
 
 第二部分：前端开发部分
 
-npx create-react-app 
+npx create-react-app client
+
+npm install bootstrap // 这个是做样式的？
+
+前端设计，表单，按钮 ，等，此时与后端还是分离的
