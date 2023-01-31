@@ -1,0 +1,25 @@
+【https://betterprogramming.pub/build-your-first-dapp-with-web3-js-9a7306d16a61】
+
+Before web3.js came along, the only way we could interact with smart contracts was through the json-rpc API provided by the Ethereum node that acted as a json-rpc server.
+
+That was not an easy task.
+
+But thanks to web3.js, you don’t have to worry about the low-level details of JSON-RPC calls anymore since it provides an abstraction of the Ethereum json-rpc interface.
+
+As such, you can start interacting with an Ethereum node using plain JavaScript. Simply put, web3.js exposes JSON-RPC APIs as JavaScript APIs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
